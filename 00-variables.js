@@ -1,0 +1,82 @@
+////  COMENTARIOS  ////
+
+
+//Esto es un comentario de línea.
+
+/*
+Esto es
+un comentario
+de bloque
+*/
+
+
+////  FORMAS DE DEFINIR VARIABLES  ////
+/*Existen 3 formas de definir variables en JS.*/
+
+var nombre= "Alejandro";
+let edad= 24;
+const constante= 3.1416;
+
+/*  NOTAS:
+· var es una forma antigua de definir variables, es preferible evitar su uso.
+· const se utiliza para definir constantes, es decir, valores que se necesitan que permanezcan fijos.
+*/
+
+let variable;       // Se crea.
+variable= "Hola";    // Se le da valor.
+
+let variable2= "Hola";    // Se crea y se le da valor.
+
+
+////  TIPOS DE DATOS  ////
+/*
+typeof variable: para saber que tipo de dato contiene la variable.
+*/
+
+/* string: cadena de textos o caracteres. */
+let cadena= "Hola";
+let cadena2= 'Como';
+let cadena3= `Estás`;
+
+console.log(typeof cadena);
+console.log(typeof cadena2);
+console.log(typeof cadena3);
+
+/* number: numeros entero y decimales. */
+let entero= 1;
+let decimal= 0.1;
+
+console.log(typeof entero)
+console.log(typeof decimal)
+
+/* boolean: verdadero o falso*/
+let verdadero= true;
+let falso= false;
+
+console.log(typeof verdadero)
+console.log(typeof falso)
+
+/* null: para una variable intencionalmente vacia. */
+let nulo= null;
+console.log(typeof nulo + " : sale object porq es un error.")
+
+/* undefined: para una varable que no se ha definido un valor. */
+let indefinido;    // Solo se ha declarado.
+console.log(typeof indefinido)
+
+
+////  CAMBIAR EL TIPO DE DATO DE UNA VARIABLE  ////
+/* String(): Cambiar a una cadena. */
+console.log(typeof String(entero))
+
+/* Number(): Cambiar a number. */
+console.log(typeof Number(entero))
+
+/* Boolean(): Cambiar a booleano. */
+console.log(typeof Boolean(entero))
+
+/* parseInt(): cambiar a numero entero. */
+console.log(typeof parseInt(entero))
+
+/* parseFloat(): cambiar a numero decimal. */
+console.log(typeof parseFloat(entero))
