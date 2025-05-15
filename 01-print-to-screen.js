@@ -2,4 +2,4 @@
 console.log('Hola Por Consola');
 
 /*IMPRIMIR EN EL VIEWPORT DEL NAVEGADOR (PANTALLA DIBUJABLE)*/
-document.write('Hola Por Viewport');
+document.write("Hola Por Viewport");
