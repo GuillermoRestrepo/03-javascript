@@ -1,11 +1,13 @@
-////  COMENTARIOS  ////
-
-//Esto es un comentario de línea.
-
+////  CONSIDERACIONES AL DEFINIR NOMBRES DE VARIABLES  ////
 /*
-Esto es
-un comentario
-de bloque
+1. Deben de inicia con una letra, un signo de dolar ($) o con un guión bajo (_).
+
+2. El unico caracter especial valido aparte del signo de dolar es el guión bajo, evitar el uso de otros caracteres especiales.
+
+3. Estilos:
+  · Camel Case (let nombreUsuario;): para definir variables.
+  · Upper Camel Case (NombreUsuario): para definir clases.
+  · Snake Case (nombre_usuario): se peude usar pero no es recomendado.
 */
 
 
@@ -19,9 +21,7 @@ const constante= 3.1416;
 /*  NOTAS:
 · var: es una forma antigua de definir variables, es preferible evitar su uso.
 
-· let: es la forma actual de definir una variable, la mas segura, versatil y utilizada.
-
-· const: tecnicamente no es una variable, es una constante, de la cual se hablará más posteriormente, sin embargo, en JavaScript la declaración de constantes es igual a la declaración de variables. 
+· let: es la forma actual de definir una variable, la más segura, versatil y utilizada.
 */
 
 let variable;       // Se crea.
