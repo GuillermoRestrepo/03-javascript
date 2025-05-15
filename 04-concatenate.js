@@ -1,3 +1,7 @@
+/* BARRA INVERTIDA (\) PARA USAR CARATERES ESPECIALES EN CADENAS */
+let mensaje= "Este es un \"mensaje\" de prueba, y este es un signo de dolar (\$Dollar)";
+console.log(mensaje);
+
 ////  CONCATENACIÓN EN JAVASCRIPT  ////
 let nombre= "Alejandro";
 let edad= 24;
