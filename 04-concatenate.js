@@ -2,15 +2,15 @@
 let mensaje= "Este es un \"mensaje\" de prueba, y este es un signo de dolar (\$Dollar)";
 console.log(mensaje);
 
+/* Utilizando signo de coma (,), no se concatena, solo se imprimen por pantalla varios argumentos*/
+console.log("El usuario de nombre (",nombre,"), tiene ",edad," años.");
+
 ////  CONCATENACIÓN EN JAVASCRIPT  ////
 let nombre= "Alejandro";
 let edad= 24;
 
 /* Utilizando signo de suma (+) */
 console.log("El usuario de nombre ("+nombre+"), tiene "+edad+" años.");
-
-/* Utilizando signo de coma (,) */
-console.log("El usuario de nombre (",nombre,"), tiene ",edad," años.");
 
 /* Utilizando signo de suma e igual (+=) */
 let saludo= "Hola, ";
@@ -35,5 +35,5 @@ console.log("Hola, ".concat(pregunta));
     NOTAS:
  · No Es recomendado utilizar el metodo .concat().
  · La mejor es concatenar usando templates (${}).
- · En caso de ser cosas simples, se puede usar (+) o (,).
+ · En caso de ser cosas simples, se puede usar (+).
 */
