@@ -97,17 +97,32 @@ document.write("Object.keys(obj4): "+Object.keys(obj4)+"<br>");
 document.write("<br>");
 
 /* Object.entries()*/
-/* devuelve las claves y los valores de un objeto en un arreglo, así: [[clave1,valor1], [clave2, valor2]] */
-document.write("Object.entries(obj5): "+Object.entries(obj5)+"<br>");
-document.write("<br>")
+/*
+    Pasa de esto: {clave1: valor1, clave2: valor2}
+    A esto: [[clave1, valor1], [clave2, valor2]]
+*/
+let objeto= {clave1: "valor1", clave2: "valor2"};
+let arreglo= Object.entries(objeto);
+document.write(`${arreglo[0]}<br>${arreglo[1]}<br>`);
+document.write("<br>");
 
-/* Object.entries() */
+/* Object.fromEntries()*/
+/*
+    Pasa de esto: [[clave1, valor1], [clave2, valor2]]
+    A esto: {clave1: valor1, clave2: valor2}
+*/
+let objeto2= Object.fromEntries(arreglo);
+document.write(`clave1: ${objeto2["clave1"]}<br>clave2: ${objeto2["clave2"]}<br>`);
+document.write("<br>");
+
+/* Object.freeze() */
 /* Hace que no se pueda cambiar, agregar ni eliminar propiedades de un objeto */
 Object.freeze(obj7);
 obj7.nombre= "Ricardo Mendoza";
 document.write(obj7.nombre+"<br>")
+document.write("<br>")
 
-/* Object.entries() */
+/* Object.seal() */
 /* Hace q no se pueda crear ni eliminar propiedados en un objeto, pero si permite modificarlas las propiedades existentes */
 Object.seal(obj6);
 obj6.nombre= "Jorge Luna";
@@ -115,6 +130,63 @@ delete obj6.nombre;
 obj6.edad= 32;
 document.write(Object.keys(obj6)+"<br>");
 document.write(obj6.nombre+"<br>");
+document.write("<br>")
+
+/* Object.assign(receptor, emisor1, emisor2, ...) */
+/* Sirve para copiar, fusionar, sobreescribir o agregar propiedades de uno o varios objetos emisores hacia un objeto receptor. */
+
+// COPIAR (El receptor debe ser un objeto)
+// Forma #1:
+let emisor= {x: "a", y: "b", z:"c"};
+let receptor= {};
+Object.assign(receptor, emisor);
+document.write(Object.values(receptor)+"<br>");
+// Forma #2:
+let receptor2= Object.assign({}, emisor);
+document.write(Object.values(receptor2)+"<br>");
+document.write("<br>")
+
+// FUSIONAR (UNIR)
+let object_1= {w: "a", x: "b"};
+let object_2= {y: "c", z: "d"};
+let union= Object.assign(object_1, object_2);
+document.write(Object.values(union)+ "<br>");
+document.write("<br>")
+
+// SOBREESCRIBIR (REEMPLAZAR)
+/* Esto pasa cuando almenos 2 objetos tienen una propiedad con la misma clave y prevalecerá el valor del untimo objeto emisor. */
+let object_3= {x: "a", y: "b"};
+let object_4= {y: "c", z: "e"};
+let object_5= {y: "d"};
+let reemplazar= Object.assign(object_3, object_4);
+document.write(Object.values(reemplazar)+ "<br>");
+let reemplazar2= Object.assign(object_3, object_4, object_5);
+document.write(Object.values(reemplazar2)+ "<br>");
+document.write("<br>")
+
+/* AGREGAR */
+Object.assign(object_3, {z: "c"});
+document.write(Object.values(object_3)+"<br>");
+document.write("<br>")
+
+/* NOTA: Si son Objetos anidados, ASSIGN copia fielmente cada objeto que se encuentre dentro, es decir al realizar un cambio dentro de dicho objeto, tambien se cambiará el original. */
+let original= {direccion: {
+        ciudad: "Durán",
+        provincia: "Guayas",
+        Región: "Costa",
+    }
+};
+let copia= Object.assign({}, original);
+// Cambiando valor de ciudad en objeto copia
+copia.direccion.ciudad= "Guayaquil";
+
+//imprimiendo ciudad de objeto original
+document.write(original.direccion.ciudad); // ahora tambien es guayaquil, cuidado con eso.
 
 
-/* TODAVIA HAY MAS FUNCIONALIDADES COMO LA HERENCIA, RECORRER Y COPIAR OBJETOS, QUE SE VERÁ PROXIMAMENTE */
+/* EXISTEN MAS METODOS QUE SE VERÄN DESPUES */
+/*
+    Object.hasOwn(obj, "clave")
+    hasOwnProperty()
+    Object.defineProperty(obj, "clave", descriptor)
+*/
