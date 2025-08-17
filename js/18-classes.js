@@ -266,7 +266,7 @@ class Cuadrado extends Figura {
         return this.lado ** 2;
     };
 };
-
+const HOLA= "xd";
 class Triangulo extends Figura {
     constructor(lado) {
         super();
