@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/00-styles.css">
+    <link rel="stylesheet" href="../css/01-styles-js.css">
+    <title>Nomenclatura</title>
+</head>
+<body class="body">
+    <main>
+        <a href="index.html">Índice</a>
+
+        <h1>NOMENCLATURA</h1>
+
+        <h2>Nombre De Identificadores:</h2>
+        <p>Los nombres de los identificadores pueden comenzar con:</p>
+        <ul>
+            <li>Una letra</li>
+            <li>Un signo de dolar <strong>$</strong></li>
+            <li>Un guión bajo <strong>_</strong></li>
+            <li>Núnca con números o caracteres especiales</li>
+        </ul>
+        
+        <h2>Nombrar Archivos</h2>
+        <p>Para nombrar archivos en JavaScript se usa <strong>snake_case</strong>. Ejemplo:</p>
+        <p>main_content.js</p>
+
+        <h2>Nombrar Constantes</h2>
+        <p>Para nombrar constantes en JavaScript se usa <strong>UPPE_SNAKE_CASE</strong>. Ejemplo:</p>
+        <pre class="bloque-codigo"><code class="codigo">
+<span class="keyword">const</span> <span class="variable">UNA_CONSTANTE</span> = <span class="number">3.1416</span>;
+        </code></pre>
+
+        <h2>Nombrar Clases</h2>
+        <p>Para nombrar clases en JavaScript se usa <strong>UpperCamelCase</strong>. Ejemplo:</p>
+        <pre class="bloque-codigo"><code class="codigo">
+<span class="keyword">class</span> <span class="function">SerHumano</span> {
+    <span class="function">constructor</span>() {
+        <span class="keyword">this</span>.<span class="property">nombre</span> = <span class="variable">nombre</span>;
+        <span class="keyword">this</span>.<span class="property">edad</span> = <span class="variable">edad</span>;
+    }
+
+    <span class="function">unSaludo</span>() {
+        <span class="keyword">return</span> <span class="string">`Hola, ${</span><span class="keyword">this</span>.<span class="property">nombre</span><span class="string">}.`</span>;
+    }
+};
+        </code></pre>
+
+
+        <h2>Nombrar Variables, Objetos, Funciones E Instancias De Clase</h2>
+        <p>Para nombrar variables objetos, funciones e instancias de clase, se utiliza <strong>lowerCamelCase</strong>. Ejemplo:</p>
+        <pre class="bloque-codigo"><code class="codigo">
+<span class="keyword">let</span> <span class="variable">unaVariable</span> = <span class="string">"Hola"</span>;
+
+<span class="keyword">const</span> <span class="variable">unObjeto</span> = {
+    <span class="property">nombre</span>: <span class="string">"Guillermo"</span>,
+    <span class="property">edad</span>: <span class="number">24</span>
+};
+
+<span class="keyword">function</span> <span class="function">unaFuncion</span>() {
+    <span class="function">console</span>.<span class="function">log</span>(<span class="string">"Hola mundo"</span>);
+};
+<span class="function">unaFuncion</span>();
+
+<span class="keyword">const</span> <span class="variable">unaInstancia</span> = <span class="keyword">new</span> <span class="function">SerHumano</span>();
+        </code></pre>
+
+    </main>
+</body>
+</html>
