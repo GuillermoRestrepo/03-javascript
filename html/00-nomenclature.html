@@ -28,21 +28,21 @@
 
         <h2>Nombrar Constantes</h2>
         <p>Para nombrar constantes en JavaScript se usa <strong>UPPE_SNAKE_CASE</strong>. Ejemplo:</p>
-        <pre class="bloque-codigo"><code class="codigo">
-<span class="keyword">const</span> <span class="variable">UNA_CONSTANTE</span> = <span class="number">3.1416</span>;
+        <pre class="codigo-js"><code>
+<span class="palabra-clave">const</span> UNA_CONSTANTE = <span class="numero">3.1416</span>;
         </code></pre>
 
         <h2>Nombrar Clases</h2>
         <p>Para nombrar clases en JavaScript se usa <strong>UpperCamelCase</strong>. Ejemplo:</p>
-        <pre class="bloque-codigo"><code class="codigo">
-<span class="keyword">class</span> <span class="function">SerHumano</span> {
-    <span class="function">constructor</span>() {
-        <span class="keyword">this</span>.<span class="property">nombre</span> = <span class="variable">nombre</span>;
-        <span class="keyword">this</span>.<span class="property">edad</span> = <span class="variable">edad</span>;
+        <pre class="codigo-js"><code>
+<span class="palabra-clave">class</span> <span class="funcion">UnaClase</span> {
+    <span class="funcion">constructor</span>() {
+        <span class="palabra-clave">this</span>.<span class="parametro">nombre</span> = <span class="parametro">nombre</span>;
+        <span class="palabra-clave">this</span>.<span class="parametro">edad</span> = <span class="parametro">edad</span>;
     }
 
-    <span class="function">unSaludo</span>() {
-        <span class="keyword">return</span> <span class="string">`Hola, ${</span><span class="keyword">this</span>.<span class="property">nombre</span><span class="string">}.`</span>;
+    <span class="funcion">unSaludo</span>() {
+        <span class="palabra-clave">return</span> <span class="cadena">`Hola, ${</span><span class="palabra-clave">this</span>.<span class="parametro">nombre</span><span class="cadena">}.`</span>;
     }
 };
         </code></pre>
@@ -50,20 +50,20 @@
 
         <h2>Nombrar Variables, Objetos, Funciones E Instancias De Clase</h2>
         <p>Para nombrar variables objetos, funciones e instancias de clase, se utiliza <strong>lowerCamelCase</strong>. Ejemplo:</p>
-        <pre class="bloque-codigo"><code class="codigo">
-<span class="keyword">let</span> <span class="variable">unaVariable</span> = <span class="string">"Hola"</span>;
+        <pre class="codigo-js"><code>
+<span class="palabra-clave">let</span> unaVariable = <span class="cadena">"Hola"</span>;
 
-<span class="keyword">const</span> <span class="variable">unObjeto</span> = {
-    <span class="property">nombre</span>: <span class="string">"Guillermo"</span>,
-    <span class="property">edad</span>: <span class="number">24</span>
+<span class="palabra-clave">const</span> unObjeto = {
+    <span class="parametro">nombre</span>: <span class="cadena">"Guillermo"</span>,
+    <span class="parametro">edad</span>: <span class="numero">24</span>
 };
 
-<span class="keyword">function</span> <span class="function">unaFuncion</span>() {
-    <span class="function">console</span>.<span class="function">log</span>(<span class="string">"Hola mundo"</span>);
+<span class="palabra-clave">function</span> <span class="funcion">unaFuncion</span>() {
+    <span class="builtin">console</span>.<span class="funcion">log</span>(<span class="cadena">"Hola mundo"</span>);
 };
-<span class="function">unaFuncion</span>();
+<span class="funcion">unaFuncion</span>();
 
-<span class="keyword">const</span> <span class="variable">unaInstancia</span> = <span class="keyword">new</span> <span class="function">SerHumano</span>();
+<span class="palabra-clave">const</span> unaInstancia = <span class="palabra-clave">new</span> <span class="funcion">UnaClase</span>();
         </code></pre>
 
     </main>
