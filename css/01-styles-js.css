@@ -1,0 +1,57 @@
+/* Contenedor del bloque de código */
+.bloque-codigo {
+  background-color: #1e1e1e; /* Fondo oscuro estilo Dark Modern */
+  color: #d4d4d4; /* Texto base */
+  padding: 0.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Texto dentro del bloque */
+.bloque-codigo .codigo {
+  color: inherit;
+}
+
+/* Palabras clave de JavaScript (let, const, if, else, return, etc.) */
+.bloque-codigo .keyword {
+  color: #569cd6;
+}
+
+/* Variables */
+.bloque-codigo .variable {
+  color: #9cdcfe;
+}
+
+/* Cadenas de texto */
+.bloque-codigo .string {
+  color: #ce9178;
+}
+
+/* Números */
+.bloque-codigo .number {
+  color: #b5cea8;
+}
+
+/* Funciones */
+.bloque-codigo .function {
+  color: #dcdcaa;
+}
+
+/* Comentarios */
+.bloque-codigo .comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* Operadores (+, -, =, etc.) */
+.bloque-codigo .operator {
+  color: #d4d4d4;
+}
+
+/* Objetos, propiedades y métodos */
+.bloque-codigo .property {
+  color: #9cdcfe;
+}
