@@ -1,5 +1,0 @@
-/*IMPRIMIR POR LA CONSOLA DEL NAVEGADOR O POR LA LÍNEA DE COMANDOS*/
-console.log('Hola Por Consola');
-
-/*IMPRIMIR EN EL VIEWPORT DEL NAVEGADOR (PANTALLA DIBUJABLE)*/
-document.write("Hola Por Viewport");
